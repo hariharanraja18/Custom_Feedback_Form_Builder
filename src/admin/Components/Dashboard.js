@@ -28,7 +28,7 @@ const Dashboard = () => {
 							onChange={(e) => SetFormName(e.target.value)}
 						/>
 						<div className="mt-2 flex justify-end gap-2">
-							<Link to={'/createForm'}>
+							<Link to={'/createForm'} state={{formName}}>
 								<button className="border border-black p-1">Create</button>
 							</Link>
 							<button
